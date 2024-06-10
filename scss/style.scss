@@ -22,12 +22,12 @@ body {
         width: 100%;
 		&__logo,
 		.fa-solid {
-			padding: 0.5em;
-			font-size: 2rem;
+			padding: $logo-padding;
+			font-size: $logo-fontSize;
 			color: $white;
 		}
 		.fa-solid {
-			font-size: 2.5rem;
+			font-size: $faSolid-fontSize;
 		}
         &__hamburger{
             position: absolute;
@@ -36,4 +36,26 @@ body {
             z-index: 99;
         }
 	}
+}
+.home-wrap{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__img-wrap{
+        margin-top: $homeImg-marginTop;
+        &__sticker{
+            position: absolute;
+            top: 40px;
+            left: 30px;
+            width: 100px;
+            height: 60px;
+            background-color: $sticker;
+            transform: rotate(150deg);
+            box-shadow: 0px -17px 20px -5px rgba(0, 0, 0, 1);
+        }
+        &__img{
+            width: $homeImg-width;
+        }
+    }
 }
