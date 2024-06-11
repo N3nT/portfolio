@@ -65,3 +65,17 @@
 	height: 1px;
 	background-color: $white;
 }
+.section-title{
+	margin: 1.5em 0;
+	font-size: 3rem;
+	text-align: center;
+}
+@mixin flex-jcc-aic{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+@mixin wraps-border($border-color){
+	border: 5px solid $border-color;
+	border-radius: 50px;
+}

@@ -7,12 +7,14 @@
 }
 html{
     scroll-behavior: smooth;
+    scroll-padding-top: 1em;
 }
 body {
     overflow-x: hidden;
 	background-color: $background;
 	font-family: 'Open Sans', sans-serif; //300-800
 	color: $white;
+    height: 2000px;
 }
 .nav {
 	display: flex;
@@ -35,14 +37,13 @@ body {
 		}
 		&__hamburger {
 			position: absolute;
-			top: 5;
 			right: 0;
 			z-index: 99;
 		}
 	}
 }
 .home-wrap {
-	position: absolute;
+	position: relative;
 	left: 50%;
 	transform: translateX(-50%);
 	display: flex;
@@ -86,23 +87,107 @@ body {
     }
     &__button{
         position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex-jcc-aic;
         width: $homeButton-width;
         height: $homeButton-height;
         color: $white;
         border-radius: $borderRadius;
         &--mywork{
-            left: $homeButton-mywork-lef;
+            left: $homeButton-mywork-left;
             background-color: $mainBlue;
             z-index: 1;
         }
         &--contact{
             top: $homeButton-contact-top;
-            left: $homeButton-contact-lef;
+            left: $homeButton-contact-left;
             background-color: $mainOrange;
             z-index: -1;
+        }
+    }
+}
+.aboutme-wrap{
+    @include flex-jcc-aic;
+    flex-direction: column;
+    &__person-wrap{
+        @include flex-jcc-aic;
+        flex-direction: column;
+        @include wraps-border($mainOrange);
+        background: $background;
+        width: $aboutmeWrap-personWrap-width;
+        height: $aboutmeWrap-personWrap-height;
+        &__img-wrap{
+            position: relative;
+            width: $aboutmeWrap-personWrap-imgWrap-width;
+            height: $aboutmeWrap-personWrap-imgWrap-height;
+            border-radius: 50%;
+            background: $mainOrange;
+            display: flex;
+            justify-content: center;
+            align-items: end;
+            img{
+                position: relative;
+                bottom: $aboutmeWrap-personWrap-imgWrap-img-bottom;
+                width: $aboutmeWrap-personWrap-imgWrap-img-width;
+            }
+        }
+        &__name{
+            position: relative;
+            top: $aboutmeWrap-personWrap-name-top;
+            width: $aboutmeWrap-personWrap-name-width;
+            height: $aboutmeWrap-personWrap-name-height;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $mainOrange;
+            z-index: 99;
+            border-radius: 50px;
+            font-size: $aboutmeWrap-personWrap-name-fontsize;
+        }
+        &__email{
+            font-size: $aboutmeWrap-personWrap-email-fontsize;
+        }
+        &__cv-button{
+            @include flex-jcc-aic;
+            margin-top: $aboutmeWrap-personWrap-cvButton-marginTop;
+            width: $aboutmeWrap-personWrap-cvButton-width;
+            height: $aboutmeWrap-personWrap-cvButton-height;
+            background-color: $mainBlue;
+            color: $white;
+            border-radius: 50px;
+        }
+    }
+    &__description-wrap{
+        margin-top:$aboutmeWrap-descriptionWrap-marginTop;
+        padding: $aboutmeWrap-descriptionWrap-padding;
+        width: $aboutmeWrap-descriptionWrap-width;
+        height: $aboutmeWrap-descriptionWrap-height;
+        @include flex-jcc-aic;
+        @include wraps-border($mainBlue);
+        text-align: center;
+        line-height: 1.2em;
+    }
+    &__skills-wrap{
+        margin-top: $aboutmeWrap-skillsWrap-marginTop;
+        width: $aboutmeWrap-skillsWrap-width;
+        height: $aboutmeWrap-skillsWrap-height;
+        @include flex-jcc-aic;
+        flex-direction: column;
+        @include wraps-border($mainBlue);
+        &__title{
+            font-size: $aboutmeWrap-skillsWrap-title-fontSize;
+            margin-bottom: $aboutmeWrap-skillsWrap-title-marginBottom;
+        }
+        &__skils{
+            img{
+                width: $aboutmeWrap-skillsWrap-skills-img-width;
+                margin: $aboutmeWrap-skillsWrap-skills-img-margin;
+            }
+            &__firstLine{
+                display: flex;
+            }
+            &__secondLine{
+                display: flex;
+            }
         }
     }
 }
