@@ -5,21 +5,25 @@
 	box-sizing: border-box;
 	font-size: 10px;
 }
+html{
+    scroll-behavior: smooth;
+}
 body {
+    overflow-x: hidden;
 	background-color: $background;
-    font-family: "Open Sans", sans-serif; //300-800
-    overflow: hidden;
+	font-family: 'Open Sans', sans-serif; //300-800
+	color: $white;
 }
 .nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
 	&__upper {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-        width: 100%;
+		width: 100%;
 		&__logo,
 		.fa-solid {
 			padding: $logo-padding;
@@ -29,33 +33,76 @@ body {
 		.fa-solid {
 			font-size: $faSolid-fontSize;
 		}
-        &__hamburger{
-            position: absolute;
-            top: 5;
-            right: 0;
-            z-index: 99;
-        }
+		&__hamburger {
+			position: absolute;
+			top: 5;
+			right: 0;
+			z-index: 99;
+		}
 	}
 }
-.home-wrap{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    &__img-wrap{
-        margin-top: $homeImg-marginTop;
-        &__sticker{
-            position: absolute;
-            top: 40px;
-            left: 30px;
-            width: 100px;
-            height: 60px;
-            background-color: $sticker;
-            transform: rotate(150deg);
-            box-shadow: 0px -17px 20px -5px rgba(0, 0, 0, 1);
+.home-wrap {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    width: 100%;
+	&__img-wrap {
+		margin-top: $homeImg-marginTop;
+		position: relative;
+		&__sticker {
+			position: absolute;
+			top: $homeSticker-top;
+			left: $homeSticker-left;
+			width: $homeSticker-width;
+			height: $homeSticker-height;
+			background-color: $sticker;
+			transform: rotate($homeSticker-rotation);
+			box-shadow: 0px -17px 20px -5px $background;
+		}
+		&__img {
+			width: $homeImg-width;
+		}
+	}
+    &__text {
+        max-width: $homeText-maxWidth;
+        padding: $homeText-padding;
+        font-size: $homeText-fontSize;
+        text-align: center;
+        .text-js, .text-php, .text-wp{
+            font-family: "Tiny5", sans-serif;
         }
-        &__img{
-            width: $homeImg-width;
+        .text-js{
+            color: $js;
+        }
+        .text-php{
+            color: $php;
+        }
+        .text-wp{
+            color: $wp;
+        }
+    }
+    &__button{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: $homeButton-width;
+        height: $homeButton-height;
+        color: $white;
+        border-radius: $borderRadius;
+        &--mywork{
+            left: $homeButton-mywork-lef;
+            background-color: $mainBlue;
+            z-index: 1;
+        }
+        &--contact{
+            top: $homeButton-contact-top;
+            left: $homeButton-contact-lef;
+            background-color: $mainOrange;
+            z-index: -1;
         }
     }
 }
