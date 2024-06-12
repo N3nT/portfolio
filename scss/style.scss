@@ -282,8 +282,8 @@ body {
         justify-content: center;
         margin-top: $certificatesWrap-badges-marginTop;
         img{
-            width: 70px;
-            margin: 0 0.6em;
+            width: $certificatesWrap-img-width;
+            margin: $certificatesWrap-img-margin;
         }
       }
 }
