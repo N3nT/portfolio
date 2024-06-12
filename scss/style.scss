@@ -53,19 +53,19 @@ body {
 	&__img-wrap {
 		margin-top: $homeImg-marginTop;
 		position: relative;
-		&__sticker {
-			position: absolute;
-			top: $homeSticker-top;
-			left: $homeSticker-left;
-			width: $homeSticker-width;
-			height: $homeSticker-height;
-			background-color: $sticker;
-			transform: rotate($homeSticker-rotation);
-			box-shadow: 0px -17px 20px -5px $background;
-		}
-		&__img {
-			width: $homeImg-width;
-		}
+	}
+	&__sticker {
+		position: absolute;
+		top: $homeSticker-top;
+		left: $homeSticker-left;
+		width: $homeSticker-width;
+		height: $homeSticker-height;
+		background-color: $sticker;
+		transform: rotate($homeSticker-rotation);
+		box-shadow: 0px -17px 20px -5px $background;
+	}
+	&__img {
+		width: $homeImg-width;
 	}
 	&__text {
 		max-width: $homeText-maxWidth;
