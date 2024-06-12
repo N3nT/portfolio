@@ -268,12 +268,22 @@ body {
     @include flex-jcc-aic;
     flex-direction: column;
     .swiper {
-        width: 350px;
-        height: 270px;
+        width: $certificatesWrap-swiper-width;
+        height: $certificatesWrap-swiper-height;
         @include flex-jcc-aic;
       }
       img{
         width: 100%;
         height: 100%;
+      }
+      &__badges{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: $certificatesWrap-badges-marginTop;
+        img{
+            width: 70px;
+            margin: 0 0.6em;
+        }
       }
 }
