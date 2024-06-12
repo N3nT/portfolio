@@ -121,46 +121,46 @@ body {
 		background: $background;
 		width: $aboutmeWrap-personWrap-width;
 		height: $aboutmeWrap-personWrap-height;
-		&__img-wrap {
-			position: relative;
-			width: $aboutmeWrap-personWrap-imgWrap-width;
-			height: $aboutmeWrap-personWrap-imgWrap-height;
-			border-radius: 50%;
-			background: $mainOrange;
-			display: flex;
-			justify-content: center;
-			align-items: end;
-			img {
-				position: relative;
-				bottom: $aboutmeWrap-personWrap-imgWrap-img-bottom;
-				width: $aboutmeWrap-personWrap-imgWrap-img-width;
-			}
-		}
-		&__name {
-			position: relative;
-			top: $aboutmeWrap-personWrap-name-top;
-			width: $aboutmeWrap-personWrap-name-width;
-			height: $aboutmeWrap-personWrap-name-height;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			background-color: $mainOrange;
-			z-index: 99;
-			border-radius: 50px;
-			font-size: $aboutmeWrap-personWrap-name-fontsize;
-		}
-		&__email {
-			font-size: $aboutmeWrap-personWrap-email-fontsize;
-		}
-		&__cv-button {
-			@include flex-jcc-aic;
-			margin-top: $aboutmeWrap-personWrap-cvButton-marginTop;
-			width: $aboutmeWrap-personWrap-cvButton-width;
-			height: $aboutmeWrap-personWrap-cvButton-height;
-			background-color: $mainBlue;
-			color: $white;
-			border-radius: 50px;
-		}
+	}
+	&__img-wrap {
+		position: relative;
+		width: $aboutmeWrap-personWrap-imgWrap-width;
+		height: $aboutmeWrap-personWrap-imgWrap-height;
+		border-radius: 50%;
+		background: $mainOrange;
+		display: flex;
+		justify-content: center;
+		align-items: end;
+	}
+	&__img {
+		position: relative;
+		bottom: $aboutmeWrap-personWrap-imgWrap-img-bottom;
+		width: $aboutmeWrap-personWrap-imgWrap-img-width;
+	}
+	&__name {
+		position: relative;
+		top: $aboutmeWrap-personWrap-name-top;
+		width: $aboutmeWrap-personWrap-name-width;
+		height: $aboutmeWrap-personWrap-name-height;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: $mainOrange;
+		z-index: 99;
+		border-radius: 50px;
+		font-size: $aboutmeWrap-personWrap-name-fontsize;
+	}
+	&__email {
+		font-size: $aboutmeWrap-personWrap-email-fontsize;
+	}
+	&__cv-button {
+		@include flex-jcc-aic;
+		margin-top: $aboutmeWrap-personWrap-cvButton-marginTop;
+		width: $aboutmeWrap-personWrap-cvButton-width;
+		height: $aboutmeWrap-personWrap-cvButton-height;
+		background-color: $mainBlue;
+		color: $white;
+		border-radius: 50px;
 	}
 	&__description-wrap {
 		margin-top: $aboutmeWrap-descriptionWrap-marginTop;
@@ -179,22 +179,20 @@ body {
 		@include flex-jcc-aic;
 		flex-direction: column;
 		@include wraps-border($mainBlue);
-		&__title {
-			font-size: $aboutmeWrap-skillsWrap-title-fontSize;
-			margin-bottom: $aboutmeWrap-skillsWrap-title-marginBottom;
-		}
-		&__skils {
-			img {
-				width: $aboutmeWrap-skillsWrap-skills-img-width;
-				margin: $aboutmeWrap-skillsWrap-skills-img-margin;
-			}
-			&__firstLine {
-				display: flex;
-			}
-			&__secondLine {
-				display: flex;
-			}
-		}
+	}
+	&__title {
+		font-size: $aboutmeWrap-skillsWrap-title-fontSize;
+		margin-bottom: $aboutmeWrap-skillsWrap-title-marginBottom;
+	}
+	&__skill-img {
+		width: $aboutmeWrap-skillsWrap-skills-img-width;
+		margin: $aboutmeWrap-skillsWrap-skills-img-margin;
+	}
+	&__secondLine {
+		display: flex;
+	}
+	&__firstLine {
+		display: flex;
 	}
 }
 .mywork-wrap {
