@@ -206,8 +206,8 @@ body {
 		overflow: hidden;
 		margin: $myworkWrap-project-margin;
 		width: $myworkWrap-project-width;
+        height: $myworkWrap-project-height;
 		border: 2px solid $mainOrange;
-		height: $myworkWrap-project-height;
 		border-radius: $borderRadius;
 		&:hover &__spec {
 			transform: translateX(0%);
@@ -254,4 +254,26 @@ body {
 			}
 		}
 	}
+    &__link{
+        @include flex-jcc-aic;
+        margin-top: $myworkWrap-link-marginTop;
+        width: $myworkWrap-link-width;
+        height: $myworkWrap-link-height;
+        background-color: $mainOrange;
+        color: $white;
+        border-radius: $borderRadius;
+    }
+}
+.certificates-wrap{
+    @include flex-jcc-aic;
+    flex-direction: column;
+    .swiper {
+        width: 350px;
+        height: 270px;
+        @include flex-jcc-aic;
+      }
+      img{
+        width: 100%;
+        height: 100%;
+      }
 }
