@@ -21,17 +21,17 @@
     <a href="index.html"><img class="mobile-nav__pl" src="./img/pl.png" alt="PL flag"></a>
     <a href="index-en.html"><img class="mobile-nav__uk" src="./img/uk.png" alt="UK flag"></a>
     <ul class="mobie-nav__list">
-      <li class="mobile-nav__list__list-element"><a href="#">Home</a></li>
-      <li class="mobile-nav__list__list-element"><a href="#aboutme">AboutMe</a></li>
-      <li class="mobile-nav__list__list-element"><a href="#mywork">MyWork</a></li>
-      <li class="mobile-nav__list__list-element"><a href="#certificates">certificates</a></li>
-      <li class="mobile-nav__list__list-element"><a href="#contact">Contact</a></li>
+      <li class="mobile-nav__list-element"><a href="#">Home</a></li>
+      <li class="mobile-nav__list-element"><a href="#aboutme">AboutMe</a></li>
+      <li class="mobile-nav__list-element"><a href="#mywork">MyWork</a></li>
+      <li class="mobile-nav__list-element"><a href="#certificates">certificates</a></li>
+      <li class="mobile-nav__list-element"><a href="#contact">Contact</a></li>
     </ul>
     <ul class="mobile-nav__socials">
-      <li class="mobile-nav__socials__s-elements"><a href=""><i class="fa-brands fa-github"></i></a></li>
-      <li class="mobile-nav__socials__s-elements"><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
-      <li class="mobile-nav__socials__s-elements"><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-      <li class="mobile-nav__socials__s-elements"><a href=""><i class="fa-brands fa-square-facebook"></i></a></li>
+      <li><a class="mobile-nav__links" href=""><i class="fa-brands fa-github"></i></a></li>
+      <li><a class="mobile-nav__links" href=""><i class="fa-brands fa-linkedin"></i></a></li>
+      <li><a class="mobile-nav__links" href=""><i class="fa-brands fa-instagram"></i></a></li>
+      <li><a class="mobile-nav__links" href=""><i class="fa-brands fa-square-facebook"></i></a></li>
     </ul>
   </div>
   <nav class="nav">
@@ -94,10 +94,10 @@
   <section id="mywork" class="mywork-wrap">
     <h2 class="section-title">MyWork</h2>
     <div class="mywork-wrap__project">
-      <div class="mywork-wrap__project__info">
+      <div class="mywork-wrap__info">
         <p>BeskidTravel | 26.05.2024</p>
       </div>
-      <div class="mywork-wrap__project__spec">
+      <div class="mywork-wrap__spec">
         <p class="mywork-wrap__project__spec__project-name">BeskidTravel</p>
         <p class="mywork-wrap__project__spec__project-tech">
           <img src="./img/figma-bg.png" alt="Figma logo">
@@ -139,12 +139,12 @@
       </div>
     </div>
     <div class="mywork-wrap__project">
-      <div class="mywork-wrap__project__info">
+      <div class="mywork-wrap__info">
         <p>PiggyBank | 07.06.2023</p>
       </div>
-      <div class="mywork-wrap__project__spec">
-        <p class="mywork-wrap__project__spec__project-name">PiggyBank</p>
-        <p class="mywork-wrap__project__spec__project-tech">
+      <div class="mywork-wrap__spec">
+        <p class="mywork-wrap__project-name">PiggyBank</p>
+        <p class="mywork-wrap__project-tech">
           <img src="./img/python.png" alt="Python logo">
           <img src="./img/kivy.png" alt="Kivy logo">
           <img src="./img/pycharm.png" alt="PyCharm logo">
@@ -193,7 +193,19 @@
   </section>
   <section id="contact" class="contact-wrap">
     <h2 class="section-title">Contact</h2>
-    
+    <div class="contact-wrap__container">
+      <form action="" class="contact-wrap__container__form">
+        <input type="text" placeholder="Name">
+        <input type="text" placeholder="E-mail">
+        <textarea name="" placeholder="Message"></textarea>
+        <input class="" type="submit" value="Send">
+      </form>
+      <div class="contact-wrap__container__socials">
+        <a href=""><i class="fa-brands fa-github"></i></a>
+        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
   </section>
   <script type="module" src="./js/main.js"></script>
   <script type="module" src="./js/swiper.js"></script>

@@ -277,13 +277,39 @@ body {
         height: 100%;
       }
       &__badges{
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex-jcc-aic;
         margin-top: $certificatesWrap-badges-marginTop;
         img{
             width: $certificatesWrap-img-width;
             margin: $certificatesWrap-img-margin;
         }
       }
+}
+.contact-wrap{
+	@include flex-jcc-aic;
+	flex-direction: column;
+	&__container{
+		display: flex;
+		flex-direction: column;
+		width: 350px;
+		padding: 2em;
+		border: 1px solid $mainOrange;
+		border-radius: $borderRadius;
+		&__form{
+			@include flex-jcc-aic;
+			flex-direction: column;
+			input, textarea{
+				width: 100%;
+				padding: 1em;
+				background-color: $background;
+				border: 1px solid $mainOrange;
+				border-radius: $borderRadius;
+				color: $white;
+				margin: 1em 0;
+			}
+			textarea{	
+				height: 200px;
+			}
+		}
+	}
 }
