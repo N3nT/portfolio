@@ -26,20 +26,20 @@ body {
 		justify-content: space-between;
 		align-items: center;
 		width: 100%;
-		&__logo,
-		.fa-solid {
-			padding: $logo-padding;
-			font-size: $logo-fontSize;
-			color: $white;
-		}
-		.fa-solid {
-			font-size: $faSolid-fontSize;
-		}
-		&__hamburger {
-			position: absolute;
-			right: 0;
-			z-index: 99;
-		}
+	}
+	&__logo,
+	.fa-solid {
+		padding: $logo-padding;
+		font-size: $logo-fontSize;
+		color: $white;
+	}
+	&__hamburger {
+		position: absolute;
+		right: 0;
+		z-index: 99;
+	}
+	.fa-solid {
+		font-size: $faSolid-fontSize;
 	}
 }
 .home-wrap {
@@ -53,19 +53,19 @@ body {
 	&__img-wrap {
 		margin-top: $homeImg-marginTop;
 		position: relative;
-		&__sticker {
-			position: absolute;
-			top: $homeSticker-top;
-			left: $homeSticker-left;
-			width: $homeSticker-width;
-			height: $homeSticker-height;
-			background-color: $sticker;
-			transform: rotate($homeSticker-rotation);
-			box-shadow: 0px -17px 20px -5px $background;
-		}
-		&__img {
-			width: $homeImg-width;
-		}
+	}
+	&__sticker {
+		position: absolute;
+		top: $homeSticker-top;
+		left: $homeSticker-left;
+		width: $homeSticker-width;
+		height: $homeSticker-height;
+		background-color: $sticker;
+		transform: rotate($homeSticker-rotation);
+		box-shadow: 0px -17px 20px -5px $background;
+	}
+	&__img {
+		width: $homeImg-width;
 	}
 	&__text {
 		max-width: $homeText-maxWidth;
@@ -121,46 +121,46 @@ body {
 		background: $background;
 		width: $aboutmeWrap-personWrap-width;
 		height: $aboutmeWrap-personWrap-height;
-		&__img-wrap {
-			position: relative;
-			width: $aboutmeWrap-personWrap-imgWrap-width;
-			height: $aboutmeWrap-personWrap-imgWrap-height;
-			border-radius: 50%;
-			background: $mainOrange;
-			display: flex;
-			justify-content: center;
-			align-items: end;
-			img {
-				position: relative;
-				bottom: $aboutmeWrap-personWrap-imgWrap-img-bottom;
-				width: $aboutmeWrap-personWrap-imgWrap-img-width;
-			}
-		}
-		&__name {
-			position: relative;
-			top: $aboutmeWrap-personWrap-name-top;
-			width: $aboutmeWrap-personWrap-name-width;
-			height: $aboutmeWrap-personWrap-name-height;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			background-color: $mainOrange;
-			z-index: 99;
-			border-radius: 50px;
-			font-size: $aboutmeWrap-personWrap-name-fontsize;
-		}
-		&__email {
-			font-size: $aboutmeWrap-personWrap-email-fontsize;
-		}
-		&__cv-button {
-			@include flex-jcc-aic;
-			margin-top: $aboutmeWrap-personWrap-cvButton-marginTop;
-			width: $aboutmeWrap-personWrap-cvButton-width;
-			height: $aboutmeWrap-personWrap-cvButton-height;
-			background-color: $mainBlue;
-			color: $white;
-			border-radius: 50px;
-		}
+	}
+	&__img-wrap {
+		position: relative;
+		width: $aboutmeWrap-personWrap-imgWrap-width;
+		height: $aboutmeWrap-personWrap-imgWrap-height;
+		border-radius: 50%;
+		background: $mainOrange;
+		display: flex;
+		justify-content: center;
+		align-items: end;
+	}
+	&__img {
+		position: relative;
+		bottom: $aboutmeWrap-personWrap-imgWrap-img-bottom;
+		width: $aboutmeWrap-personWrap-imgWrap-img-width;
+	}
+	&__name {
+		position: relative;
+		top: $aboutmeWrap-personWrap-name-top;
+		width: $aboutmeWrap-personWrap-name-width;
+		height: $aboutmeWrap-personWrap-name-height;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: $mainOrange;
+		z-index: 99;
+		border-radius: 50px;
+		font-size: $aboutmeWrap-personWrap-name-fontsize;
+	}
+	&__email {
+		font-size: $aboutmeWrap-personWrap-email-fontsize;
+	}
+	&__cv-button {
+		@include flex-jcc-aic;
+		margin-top: $aboutmeWrap-personWrap-cvButton-marginTop;
+		width: $aboutmeWrap-personWrap-cvButton-width;
+		height: $aboutmeWrap-personWrap-cvButton-height;
+		background-color: $mainBlue;
+		color: $white;
+		border-radius: 50px;
 	}
 	&__description-wrap {
 		margin-top: $aboutmeWrap-descriptionWrap-marginTop;
@@ -179,22 +179,20 @@ body {
 		@include flex-jcc-aic;
 		flex-direction: column;
 		@include wraps-border($mainBlue);
-		&__title {
-			font-size: $aboutmeWrap-skillsWrap-title-fontSize;
-			margin-bottom: $aboutmeWrap-skillsWrap-title-marginBottom;
-		}
-		&__skils {
-			img {
-				width: $aboutmeWrap-skillsWrap-skills-img-width;
-				margin: $aboutmeWrap-skillsWrap-skills-img-margin;
-			}
-			&__firstLine {
-				display: flex;
-			}
-			&__secondLine {
-				display: flex;
-			}
-		}
+	}
+	&__title {
+		font-size: $aboutmeWrap-skillsWrap-title-fontSize;
+		margin-bottom: $aboutmeWrap-skillsWrap-title-marginBottom;
+	}
+	&__skill-img {
+		width: $aboutmeWrap-skillsWrap-skills-img-width;
+		margin: $aboutmeWrap-skillsWrap-skills-img-margin;
+	}
+	&__secondLine {
+		display: flex;
+	}
+	&__firstLine {
+		display: flex;
 	}
 }
 .mywork-wrap {
@@ -206,84 +204,111 @@ body {
 		overflow: hidden;
 		margin: $myworkWrap-project-margin;
 		width: $myworkWrap-project-width;
-        height: $myworkWrap-project-height;
+		height: $myworkWrap-project-height;
 		border: 2px solid $mainOrange;
 		border-radius: $borderRadius;
-		&:hover &__spec {
+		&:hover .mywork-wrap__spec {
 			transform: translateX(0%);
 		}
-		&:hover &__info {
+		&:hover .mywork-wrap__info {
 			transform: translateX(-100%);
 		}
-		&__info,
-		&__spec {
-			position: absolute;
-			width: 100%;
-			height: 100%;
+	}
+	&__more-button {
+		@include flex-jcc-aic;
+		margin-top: $myworkWrap-link-marginTop;
+		width: $myworkWrap-link-width;
+		height: $myworkWrap-link-height;
+		background-color: $mainOrange;
+		color: $white;
+		border-radius: $borderRadius;
+	}
+	&__info,
+	&__spec {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		@include flex-jcc-aic;
+		transition: transform 0.4s ease-in-out;
+	}
+	&__info {
+		p {
+			font-size: $myworkWrap-project-info-fontSize;
+		}
+	}
+	&__spec {
+		transform: translateX(100%);
+		background-color: $mainOrange;
+	}
+	&__project-name {
+		display: none;
+	}
+	&__project-tech {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		width: 100%;
+	}
+	&__tech-img {
+		width: $myworkWrap-project-spec-projectTech-img-width;
+	}
+	&__tech-link {
+		font-size: $myworkWrap-project-spec-projectTech-link-fontSize;
+		color: $white;
+		transition: scale 0.3s, color 0.3s;
+		&:hover {
+			scale: 1.1;
+			color: $mainBlue;
+		}
+	}
+}
+.certificates-wrap {
+	@include flex-jcc-aic;
+	flex-direction: column;
+	.swiper {
+		width: $certificatesWrap-swiper-width;
+		height: $certificatesWrap-swiper-height;
+		@include flex-jcc-aic;
+	}
+	img {
+		width: 100%;
+		height: 100%;
+	}
+	&__badges {
+		@include flex-jcc-aic;
+		margin-top: $certificatesWrap-badges-marginTop;
+		img {
+			width: $certificatesWrap-img-width;
+			margin: $certificatesWrap-img-margin;
+		}
+	}
+}
+.contact-wrap {
+	@include flex-jcc-aic;
+	flex-direction: column;
+	&__container {
+		display: flex;
+		flex-direction: column;
+		width: 350px;
+		padding: 2em;
+		border: 1px solid $mainOrange;
+		border-radius: $borderRadius;
+		&__form {
 			@include flex-jcc-aic;
-			transition: transform 0.4s ease-in-out;
-		}
-		&__info {
-			p {
-				font-size: $myworkWrap-project-info-fontSize;
-			}
-		}
-		&__spec {
-			transform: translateX(100%);
-			background-color: $mainOrange;
-			&__project-name {
-				display: none;
-			}
-			&__project-tech {
-				display: flex;
-				justify-content: space-around;
-				align-items: center;
+			flex-direction: column;
+			input,
+			textarea {
 				width: 100%;
-				img {
-					width: $myworkWrap-project-spec-projectTech-img-width;
-				}
-				a {
-					font-size: $myworkWrap-project-spec-projectTech-link-fontSize;
-					color: $white;
-                    transition: scale 0.3s, color 0.3s;
-					&:hover {
-						scale: 1.1;
-						color: $mainBlue;
-					}
-				}
+				padding: 1em;
+				background-color: $background;
+				border: 1px solid $mainOrange;
+				border-radius: $borderRadius;
+				color: $white;
+				margin: 1em 0;
+			}
+			textarea {
+				height: 200px;
 			}
 		}
 	}
-    &__link{
-        @include flex-jcc-aic;
-        margin-top: $myworkWrap-link-marginTop;
-        width: $myworkWrap-link-width;
-        height: $myworkWrap-link-height;
-        background-color: $mainOrange;
-        color: $white;
-        border-radius: $borderRadius;
-    }
-}
-.certificates-wrap{
-    @include flex-jcc-aic;
-    flex-direction: column;
-    .swiper {
-        width: $certificatesWrap-swiper-width;
-        height: $certificatesWrap-swiper-height;
-        @include flex-jcc-aic;
-      }
-      img{
-        width: 100%;
-        height: 100%;
-      }
-      &__badges{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: $certificatesWrap-badges-marginTop;
-        img{
-            width: $certificatesWrap-img-width;
-            margin: $certificatesWrap-img-margin;
-        }
-      }
 }

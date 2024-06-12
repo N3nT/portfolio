@@ -21,31 +21,29 @@
 	&--active {
 		transform: translateX(0);
 	}
-	&__list {
-		&__list-element {
-			margin: 1.3em;
-			transition: opacity 0.3s;
-			&:hover {
-				opacity: 0.6;
-			}
-			a {
-				text-decoration: none;
-				color: $white;
-				font-family: 'Tiny5', sans-serif;
-				font-size: 2rem;
-				padding: 0.3em;
-			}
+	&__list-element {
+		margin: 1.3em;
+		transition: opacity 0.3s;
+		&:hover {
+			opacity: 0.6;
+		}
+		a {
+			text-decoration: none;
+			color: $white;
+			font-family: 'Tiny5', sans-serif;
+			font-size: 2rem;
+			padding: 0.3em;
 		}
 	}
 	&__socials {
 		position: absolute;
 		bottom: 100px;
 		display: flex;
-		a {
-			padding: 0.5em;
-			color: $white;
-			font-size: 2.2rem;
-		}
+	}
+	&__links {
+		padding: 0.5em;
+		color: $white;
+		font-size: 2.2rem;
 	}
     &__pl,&__uk{
         position: absolute;
