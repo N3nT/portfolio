@@ -5,6 +5,11 @@
 	overflow: hidden;
 	height: 100vh;
 }
+.vertical-line{
+	height: 40px;
+	width: 1px;
+	background-color: $white;
+}
 .mobile-nav {
 	position: fixed;
 	top: 0;

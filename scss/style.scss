@@ -13,7 +13,6 @@ body {
 	background-color: $background;
 	font-family: 'Open Sans', sans-serif; //300-800
 	color: $white;
-	height: 2000px;
 }
 .nav {
 	display: flex;
@@ -25,6 +24,12 @@ body {
 		justify-content: space-between;
 		align-items: center;
 		width: 100%;
+	}
+	&__pc{
+		display: none;
+	}
+	&__links{
+		display: none;
 	}
 	&__logo,
 	.fa-solid {
@@ -43,8 +48,6 @@ body {
 }
 .home-wrap {
 	position: relative;
-	left: 50%;
-	transform: translateX(-50%);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -85,6 +88,14 @@ body {
 		.text-wp {
 			color: $wp;
 		}
+	}
+	&__container{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	&__buttons{
+		width: 300px;
 	}
 	&__button {
 		position: relative;
@@ -355,10 +366,232 @@ body {
 	&__first-column, &__second-column{
 		display: flex;
 		flex-direction: column;
-		padding: 1em;
+		padding: 2em 0;
+		padding-left: 1em;
 		a{
 			color: $gray;
 			padding: .3em;
 		}
 	}
+}
+@media screen and (min-width: 576px){
+	.nav{
+		&__upper{
+			position: relative;
+			max-width: 576px;
+		}
+	}
+	.home-wrap{
+		&__buttons{
+			display: flex;
+			justify-content: space-around;
+		}
+		&__img{
+			width: 350px;
+		}
+		&__sticker{
+			width: 120px;
+		}
+		&__buttons{
+			width: 400px;
+		}
+		&__button{
+			position: unset;
+			margin: 1em;
+			&--work{
+				left: unset;
+			}
+			&--contact{
+				top: unset;
+				left: unset;
+			}
+		}
+	}
+	.aboutme-wrap{
+		&__person-wrap{
+			width: 500px;
+		}
+		&__cv-button{
+			padding: 0.9em;
+		}
+		&__description-wrap{
+			width: 500px;
+			font-size: 1.2rem;
+		}
+		&__skills-wrap{
+			width: 500px;
+			height: 350px;
+		}
+		&__skill-img{
+			margin: 1em 1.3em;
+			width: 80px;
+		}
+	}
+	.mywork-wrap{
+		&__project{
+			width: 500px;
+		}
+	}
+	.certificates-wrap{
+		.swiper{
+			width: 500px;
+			height: 390px;
+		}
+	}
+	.contact-wrap{
+		&__container{
+			width: 500px;
+		}
+		&__socials{
+			width: 500px;
+		}
+	}
+	.footer-wrap{
+		&__first-column, &__second-column, &__left{
+			padding-left: 2em;
+			font-size: 1.2rem;
+		}
+	}
+}
+@media screen and (min-width: 768px) {
+	.nav{
+		&__upper{
+			max-width: 700px;
+		}
+	}
+	.home-wrap{
+		&__img{
+			width: 500px;
+		}
+	}
+	.aboutme-wrap{
+		&__person-wrap{
+			width: 500px;
+			height: 580px;
+		}
+		&__img-wrap{
+			width: 400px;
+			height: 400px;
+			overflow: hidden;
+		}
+		&__img{
+			width: 300px;
+		}
+		&__name{
+			top: -30px;
+			width: 350px;
+		}
+		&__email{
+			position: relative;
+			top: -10px;
+		}
+	}
+	.mywork-wrap{
+		&__project{
+			width: 600px;
+		}
+	}
+	.certificates-wrap{
+		.swiper{
+			width: 700px;
+			height: 530px;
+		}
+	}
+}
+@media screen and (min-width: 992px){
+	.nav{
+		&__upper{
+			height: 80px;
+			max-width: 992px;
+		}
+		&__pc{
+			display: block;
+			ul{
+				display: flex;
+			}
+			li{
+				padding: 2em 2em;
+				a{
+					color: $white;
+				}
+			}
+		}
+		&__hamburger{
+			display: none;
+		}
+		&__links{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			i{
+				font-size: 1.8rem;
+				color: $white;
+				margin: 0 0.5em;
+			}
+			img{
+				width: 40px;
+				margin: 0 1em;
+			}
+		}
+	}
+	.home-wrap{
+		flex-direction: row;
+		justify-content: center;
+		&__img{
+			width: 300px;
+		}
+		&__container{
+			width: 500px;
+		}
+	}
+	.aboutme-wrap{
+		&__container{
+			display: flex;
+			width: 970px;
+			justify-content: space-between;
+			align-items: center;
+		}
+		&__person-wrap{
+			width: 450px;
+			height: 620px;
+		}
+		&__description-wrap{
+			margin-top: unset;
+			height: 270px;
+		}
+		&__skills-wrap{
+			height: 320px;
+		}
+	}
+	.mywork-wrap{
+		&__project{
+			width: 970px;
+		}
+	}
+	.certificates-wrap{
+		.swiper{
+			width: 970px;
+			height: 800px;
+		}
+	}
+	.contact-wrap{
+		&__container{
+			width: 970px;
+		}
+		&__socials{
+			width: 970px;
+		}
+	}
+	.footer-wrap{
+		&__left{
+			padding-right: 3em;
+		}
+		&__first-column, &__second-column{
+			padding-left: 3em;
+		}
+	}
+}
+@media screen and (min-width: 1200px) {
+
+	
 }
