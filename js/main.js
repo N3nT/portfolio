@@ -1,7 +1,7 @@
 const body = document.querySelector('body')
 const hamburger = document.querySelector('.fa-solid')
 const mobileNav = document.querySelector('.mobile-nav')
-const mobileNavListElements = document.querySelectorAll('.mobile-nav__list__list-element')
+const mobileNavListElements = document.querySelectorAll('.mobile-nav__list-element')
 
 const toggleMobileMenu = () => {
 	mobileNav.classList.toggle('mobile-nav--active')

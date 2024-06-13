@@ -275,6 +275,7 @@ body {
 		height: 100%;
 	}
 	&__badges {
+		display: none;
 		@include flex-jcc-aic;
 		margin-top: $certificatesWrap-badges-marginTop;
 		img {
@@ -286,29 +287,75 @@ body {
 .contact-wrap {
 	@include flex-jcc-aic;
 	flex-direction: column;
+	margin-bottom: 5em;
 	&__container {
 		display: flex;
 		flex-direction: column;
 		width: 350px;
 		padding: 2em;
 		border: 1px solid $mainOrange;
+		border-top-left-radius: $borderRadius;
+		border-top-right-radius: $borderRadius;
+	}
+	&__form {
+		@include flex-jcc-aic;
+		flex-direction: column;
+		textarea {
+			height: 200px;
+		}
+	}
+	&__input {
+		width: 100%;
+		padding: 1em;
+		background-color: $background;
+		border: 1px solid $mainOrange;
 		border-radius: $borderRadius;
-		&__form {
-			@include flex-jcc-aic;
-			flex-direction: column;
-			input,
-			textarea {
-				width: 100%;
-				padding: 1em;
-				background-color: $background;
-				border: 1px solid $mainOrange;
-				border-radius: $borderRadius;
-				color: $white;
-				margin: 1em 0;
-			}
-			textarea {
-				height: 200px;
-			}
+		color: $white;
+		margin: 1em 0;
+	}
+	&__submit {
+		background-color: $mainOrange;
+		margin: 1em 0;
+		padding: 1em;
+		border: none;
+		width: 60%;
+		color: $white;
+		border-radius: $borderRadius;
+	}
+	&__socials {
+		width: 350px;
+		background-color: $mainOrange;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		padding: 0.5em 0;
+		font-size: 3rem;
+		border-bottom-left-radius: $borderRadius;
+		border-bottom-right-radius: $borderRadius;
+		a {
+			color: $white;
+		}
+	}
+}
+.footer-wrap{
+	margin: 1em 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	&__left{
+		text-align: center;
+		border-right: 1px solid $white;
+		padding: 1em;
+	}
+	&__right{
+		display: flex;
+	}
+	&__first-column, &__second-column{
+		display: flex;
+		flex-direction: column;
+		padding: 1em;
+		a{
+			color: $white;
 		}
 	}
 }
