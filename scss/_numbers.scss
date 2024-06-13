@@ -21,6 +21,7 @@ $homeButton-height: 75px;
 $homeButton-mywork-left: -20px;
 $homeButton-contact-top: -20px;
 $homeButton-contact-left: 120px;
+$homeButtons-width: 300px;
 
 //aboutMe
 //
@@ -81,3 +82,37 @@ $certificatesWrap-badges-marginTop: 2em;
 $certificatesWrap-img-width: 70px; 
 $certificatesWrap-img-margin: 0 0.6em; 
 //
+
+//contactWrap
+$contactWrap-marginBottom: 5em;
+//container
+$contactWrap-container-width: 350px;
+$contactWrap-container-padding: 2em;
+//form
+//textarea
+$contactWrap-form-textarea-height: 200px;
+//input
+$contactWrap-input-padding: 1em;
+$contactWrap-input-margin: 1em 0;
+$contactWrap-input-fontSize: 1.5rem;
+//submit
+$contactWrap-submit-margin: 1em 0;
+$contactWrap-submit-padding: 0.7em;
+$contactWrap-submit-fontSize: 1.3rem;
+//socials
+$contactWrap-socials-width: 350px;
+$contactWrap-socials-padding: 0.2em 0;
+$contactWrap-socials-fontSize: 3rem;
+$contactWrap-socials-link-padding: 0.6em;
+//
+
+//footerWrap
+$footerWrap-margin: 1em 0;
+//left
+$footerWrap-left-padding: 1em;
+//first-column / second-column
+$footerWrap-column-padding-tb: 2em 0; //tb = Top and Bottom
+$footerWrap-column-paddingLeft: 1em;
+$footerWrap-column-link-padding: 0.3em;
+
+//MEDIA

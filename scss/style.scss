@@ -30,25 +30,25 @@ body {
 		li {
 			cursor: pointer;
 			transition: background-color 0.2s ease-in;
-			&:hover{
+			&:hover {
 				background-color: $mainBlue;
 			}
 		}
 	}
 	&__links {
 		display: none;
-		i{
+		i {
 			cursor: pointer;
 			transition: color 0.2s ease-in;
-			&:hover{
+			&:hover {
 				color: $mainOrange;
 			}
 		}
-		img{
+		img {
 			opacity: 0.8;
 			cursor: pointer;
 			transition: opacity 0.2s ease-in;
-			&:hover{
+			&:hover {
 				opacity: 1;
 			}
 		}
@@ -117,7 +117,7 @@ body {
 		align-items: center;
 	}
 	&__buttons {
-		width: 300px;
+		width: $homeButtons-width;
 	}
 	&__button {
 		position: relative;
@@ -133,7 +133,7 @@ body {
 			border: 3px solid $mainBlue;
 			cursor: pointer;
 			transition: background-color 0.3s ease-in;
-			&:hover{
+			&:hover {
 				background-color: $background;
 			}
 		}
@@ -144,7 +144,7 @@ body {
 			border: 3px solid $mainOrange;
 			cursor: pointer;
 			transition: background-color 0.3s ease-in;
-			&:hover{
+			&:hover {
 				background-color: $background;
 			}
 		}
@@ -207,7 +207,7 @@ body {
 		border-radius: 50px;
 		cursor: pointer;
 		transition: background-color 0.3s ease-in;
-		&:hover{
+		&:hover {
 			background-color: $background;
 		}
 	}
@@ -274,7 +274,7 @@ body {
 		border-radius: $borderRadius;
 		cursor: pointer;
 		transition: background-color 0.2s ease-in;
-		&:hover{
+		&:hover {
 			background-color: $background;
 		}
 	}
@@ -342,12 +342,12 @@ body {
 .contact-wrap {
 	@include flex-jcc-aic;
 	flex-direction: column;
-	margin-bottom: 5em;
+	margin-bottom: $contactWrap-marginBottom;
 	&__container {
 		display: flex;
 		flex-direction: column;
-		width: 350px;
-		padding: 2em;
+		width: $contactWrap-container-width;
+		padding: $contactWrap-container-padding;
 		border: 1px solid $mainOrange;
 		border-top-left-radius: $borderRadius;
 		border-top-right-radius: $borderRadius;
@@ -356,70 +356,70 @@ body {
 		@include flex-jcc-aic;
 		flex-direction: column;
 		textarea {
-			height: 200px;
+			height: $contactWrap-form-textarea-height;
 		}
 	}
 	&__input {
 		width: 100%;
-		padding: 1em;
+		padding: $contactWrap-input-padding;
 		background-color: $background;
 		border: 1px solid $mainOrange;
 		border-radius: $borderRadius;
 		color: $white;
-		margin: 1em 0;
-		font-size: 1.5rem;
+		margin: $contactWrap-input-margin;
+		font-size: $contactWrap-input-fontSize;
 	}
 	&__submit {
 		background-color: $mainOrange;
-		margin: 1em 0;
-		padding: 0.7em;
+		margin: $contactWrap-submit-margin;
+		padding: $contactWrap-submit-padding;
 		border: none;
 		width: 60%;
 		color: $white;
 		border: 3px solid $mainOrange;
 		border-radius: $borderRadius;
-		font-size: 1.3rem;
+		font-size: $contactWrap-submit-fontSize;
 		cursor: pointer;
 		transition: 0.2s background-color ease-in;
-		&:hover{
+		&:hover {
 			background-color: $background;
 		}
 	}
 	&__socials {
-		width: 350px;
+		width: $contactWrap-socials-width;
 		background-color: $mainOrange;
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
-		padding: 0.2em 0;
-		font-size: 3rem;
+		padding: $contactWrap-socials-padding;
+		font-size: $contactWrap-socials-fontSize;
 		border: 1px solid $mainOrange;
 		border-bottom-left-radius: $borderRadius;
 		border-bottom-right-radius: $borderRadius;
 		pointer-events: none;
 		transition: background-color 0.2s ease-in;
 		a {
-			padding: 0.6em;
+			padding: $contactWrap-socials-link-padding;
 			color: $white;
 			pointer-events: auto;
-			&:hover{
+			&:hover {
 				color: $mainOrange;
 			}
 		}
-		&:hover{
+		&:hover {
 			background-color: $background;
 		}
 	}
 }
 .footer-wrap {
-	margin: 1em 0;
+	margin: $footerWrap-margin;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	&__left {
 		text-align: center;
 		border-right: 1px solid $white;
-		padding: 1em;
+		padding: $footerWrap-left-padding;
 		color: $gray;
 	}
 	&__right {
@@ -429,12 +429,12 @@ body {
 	&__second-column {
 		display: flex;
 		flex-direction: column;
-		padding: 2em 0;
-		padding-left: 1em;
+		padding: $footerWrap-column-padding-tb;
+		padding-left: $footerWrap-column-paddingLeft;
 		a {
 			color: $gray;
-			padding: 0.3em;
-			&:hover{
+			padding: $footerWrap-column-link-padding;
+			&:hover {
 				color: $white;
 			}
 		}
