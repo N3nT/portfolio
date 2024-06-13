@@ -7,7 +7,6 @@
 }
 html {
 	scroll-behavior: smooth;
-	scroll-padding-top: 1em;
 }
 body {
 	overflow-x: hidden;
@@ -275,10 +274,10 @@ body {
 		height: 100%;
 	}
 	&__badges {
-		display: none;
 		@include flex-jcc-aic;
 		margin-top: $certificatesWrap-badges-marginTop;
 		img {
+			display: none;
 			width: $certificatesWrap-img-width;
 			margin: $certificatesWrap-img-margin;
 		}
@@ -312,15 +311,17 @@ body {
 		border-radius: $borderRadius;
 		color: $white;
 		margin: 1em 0;
+		font-size: 1.5rem;
 	}
 	&__submit {
 		background-color: $mainOrange;
 		margin: 1em 0;
-		padding: 1em;
+		padding: 0.7em;
 		border: none;
 		width: 60%;
 		color: $white;
 		border-radius: $borderRadius;
+		font-size: 1.3rem;
 	}
 	&__socials {
 		width: 350px;
@@ -346,6 +347,7 @@ body {
 		text-align: center;
 		border-right: 1px solid $white;
 		padding: 1em;
+		color: $gray;
 	}
 	&__right{
 		display: flex;
@@ -355,7 +357,8 @@ body {
 		flex-direction: column;
 		padding: 1em;
 		a{
-			color: $white;
+			color: $gray;
+			padding: .3em;
 		}
 	}
 }
