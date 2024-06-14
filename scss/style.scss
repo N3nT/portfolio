@@ -444,7 +444,7 @@ body {
 	.nav {
 		&__upper {
 			position: relative;
-			max-width: 576px;
+			max-width: $s-nav-upper-maxWidth;
 		}
 	}
 	.home-wrap {
@@ -453,17 +453,17 @@ body {
 			justify-content: space-around;
 		}
 		&__img {
-			width: 350px;
+			width: $s-homeWrap-img-width;
 		}
 		&__sticker {
-			width: 120px;
+			width: $s-homeWrap-sticker-width;
 		}
 		&__buttons {
-			width: 400px;
+			width: $s-homeWrap-buttons-width;
 		}
 		&__button {
 			position: unset;
-			margin: 1em;
+			margin: $s-homeWrap-button-margin;
 			&--work {
 				left: unset;
 			}
@@ -475,102 +475,109 @@ body {
 	}
 	.aboutme-wrap {
 		&__person-wrap {
-			width: 500px;
+			width: $s-personWrap-width;
 		}
 		&__cv-button {
-			padding: 0.9em;
+			padding: $s-personWrap-CVButton-padding;
 		}
 		&__description-wrap {
-			width: 500px;
-			font-size: 1.2rem;
+			width: $s-personWrap-descriptionWrap-width;
+			font-size: $s-personWrap-descriptionWrap-fontSize;
 		}
 		&__skills-wrap {
-			width: 500px;
-			height: 350px;
+			width: $s-personWrap-skillsWrap-width;
+			height: $s-personWrap-skillsWrap-height;
 		}
 		&__skill-img {
-			margin: 1em 1.3em;
-			width: 80px;
+			margin: $s-personWrap-skillImg-margin;
+			width: $s-personWrap-skillImg-width;
 		}
 	}
 	.mywork-wrap {
 		&__project {
-			width: 500px;
+			width: $s-myworkWrap-project-width;
 		}
 	}
 	.certificates-wrap {
 		.swiper {
-			width: 500px;
-			height: 390px;
+			width: $s-certificatesWrap-swiper-width;
+			height: $s-certificatesWrap-swiper-height;
 		}
 	}
 	.contact-wrap {
 		&__container {
-			width: 500px;
+			width: $s-contactWrap-container-width;
 		}
 		&__socials {
-			width: 500px;
+			width: $s-contactWrap-socials-width;
 		}
 	}
 	.footer-wrap {
 		&__first-column,
 		&__second-column,
 		&__left {
-			padding-left: 2em;
-			font-size: 1.2rem;
+			padding-left: $s-footerWrap-paddings-left;
+			font-size: $s-footerWrap-paddings-fontSize;
 		}
 	}
 }
 @media screen and (min-width: 768px) {
 	.nav {
 		&__upper {
-			max-width: 700px;
+			max-width: $m-nav-upper-maxWidth;
 		}
 	}
 	.home-wrap {
 		&__img {
-			width: 500px;
+			width: $m-homeWrap-img-width;
 		}
 	}
 	.aboutme-wrap {
 		&__person-wrap {
-			width: 500px;
-			height: 580px;
+			width: $m-aboutmeWrap-personWrap-width;
+			height: $m-aboutmeWrap-personWrap-width;
 		}
 		&__img-wrap {
-			width: 400px;
-			height: 400px;
+			width: $m-aboutmeWrap-imgWrap-width;
+			height: $m-aboutmeWrap-imgWrap-height;
 			overflow: hidden;
 		}
 		&__img {
-			width: 300px;
+			width: $m-aboutmeWrap-img-width;
 		}
 		&__name {
-			top: -30px;
-			width: 350px;
+			top: $m-aboutmeWrap-name-top;
+			width: $m-aboutmeWrap-name-width;
 		}
 		&__email {
 			position: relative;
-			top: -10px;
+			top: $m-aboutmeWrap-email-top;
 		}
 	}
 	.mywork-wrap {
 		&__project {
-			width: 600px;
+			width: $m-myworkWrap-project-width;
 		}
 	}
 	.certificates-wrap {
 		.swiper {
-			width: 700px;
-			height: 530px;
+			width: $m-certificatesWrap-swiper-width;
+			height: $m-certificatesWrap-swiper-height;
+		}
+		&__badges {
+			img {
+				display: block;
+				width: $m-certificatesWrap-badges-img-width;
+				margin: $m-certificatesWrap-badges-img-margin;
+			}
 		}
 	}
 }
 @media screen and (min-width: 992px) {
 	.nav {
 		&__upper {
-			height: 80px;
-			max-width: 992px;
+			height: $l-nav-upper-height;
+			max-width: $l-nav-upper-maxWidth;
 		}
 		&__pc {
 			display: block;
@@ -578,7 +585,7 @@ body {
 				display: flex;
 			}
 			li {
-				padding: 2em 2em;
+				padding: $l-nav-pc-li-padding;
 				a {
 					color: $white;
 				}
@@ -592,13 +599,13 @@ body {
 			align-items: center;
 			justify-content: center;
 			i {
-				font-size: 1.8rem;
+				font-size: $l-nav-links-i-fontSize;
 				color: $white;
-				margin: 0 0.5em;
+				margin: $l-nav-links-i-margin;
 			}
 			img {
-				width: 40px;
-				margin: 0 1em;
+				width: $l-nav-links-img-width;
+				margin: $l-nav-links-img-margin;
 			}
 		}
 	}
@@ -606,57 +613,62 @@ body {
 		flex-direction: row;
 		justify-content: center;
 		&__img {
-			width: 300px;
+			width: $l-homeWrap-img-width;
 		}
 		&__container {
-			width: 500px;
+			width: $l-homeWrap-container-width;
 		}
 	}
 	.aboutme-wrap {
 		&__container {
 			display: flex;
-			width: 970px;
+			width: $l-aboutmeWrap-container-width;
 			justify-content: space-between;
 			align-items: center;
 		}
 		&__person-wrap {
-			width: 450px;
-			height: 620px;
+			width: $l-aboutmeWrap-personWrap-width;
+			height: $l-aboutmeWrap-personWrap-height;
 		}
 		&__description-wrap {
 			margin-top: unset;
-			height: 270px;
+			height: $l-aboutmeWrap-descriptionWrap-height;
 		}
 		&__skills-wrap {
-			height: 320px;
+			height: $l-aboutmeWrap-skillsWrap-height;
 		}
 	}
 	.mywork-wrap {
 		&__project {
-			width: 970px;
+			width: $l-myworkWrap-project-width;
 		}
 	}
 	.certificates-wrap {
 		.swiper {
-			width: 970px;
-			height: 800px;
+			width: $l-certificatesWrap-swiper-width;
+			height: $l-certificatesWrap-swiper-height;
+		}
+		&__badges {
+			img {
+				width: $l-certificatesWrap-badges-img-width;
+			}
 		}
 	}
 	.contact-wrap {
 		&__container {
-			width: 970px;
+			width: $l-contactWrap-container-width;
 		}
 		&__socials {
-			width: 970px;
+			width: $l-contactWrap-socials-width;
 		}
 	}
 	.footer-wrap {
 		&__left {
-			padding-right: 3em;
+			padding-right: $l-footerWrap-left-paddingRight;
 		}
 		&__first-column,
 		&__second-column {
-			padding-left: 3em;
+			padding-left: $l-footerWrap-column-paddingLeft;
 		}
 	}
 }

@@ -116,3 +116,89 @@ $footerWrap-column-paddingLeft: 1em;
 $footerWrap-column-link-padding: 0.3em;
 
 //MEDIA
+//
+//small >576px
+//nav
+$s-nav-upper-maxWidth: 576px;
+//homeWrap
+$s-homeWrap-img-width: 350px;
+$s-homeWrap-sticker-width: 120px;
+$s-homeWrap-buttons-width: 400px;
+$s-homeWrap-button-margin: 1em;
+//aboutmeWrap
+$s-personWrap-width: 500px;
+$s-personWrap-CVButton-padding: 0.9em;
+$s-personWrap-descriptionWrap-width: 500px;
+$s-personWrap-descriptionWrap-fontSize: 1.2rem;
+$s-personWrap-skillsWrap-width: 500px;
+$s-personWrap-skillsWrap-height: 350px;
+$s-personWrap-skillImg-margin: 1em 1.3em;
+$s-personWrap-skillImg-width: 80px;
+//myworkWrap
+$s-myworkWrap-project-width: 500px;
+//certificatesWrap
+$s-certificatesWrap-swiper-width: 500px;
+$s-certificatesWrap-swiper-height: 390px;
+//contactWrap
+$s-contactWrap-container-width: 500px;
+$s-contactWrap-socials-width: 500px;
+//footerWrap
+$s-footerWrap-paddings-left: 2em;
+$s-footerWrap-paddings-fontSize: 1.2rem;
+//
+
+
+//medium > 768px
+//nav
+$m-nav-upper-maxWidth: 700px;
+//homeWrap
+$m-homeWrap-img-width: 500px;
+//aboutmeWrap
+$m-aboutmeWrap-personWrap-width: 500px;
+$m-aboutmeWrap-personWrap-width: 580px;
+$m-aboutmeWrap-imgWrap-width: 400px;
+$m-aboutmeWrap-imgWrap-height: 400px;
+$m-aboutmeWrap-img-width: 300px;
+$m-aboutmeWrap-name-top: -30px;
+$m-aboutmeWrap-name-width: 350px;
+$m-aboutmeWrap-email-top: -10px;
+//myworkWrap
+$m-myworkWrap-project-width: 600px;
+//certificatesWrap
+$m-certificatesWrap-swiper-width: 700px;
+$m-certificatesWrap-swiper-height: 530px;
+$m-certificatesWrap-badges-img-width: 120px;
+$m-certificatesWrap-badges-img-margin: 2em 2.2em 0 2.2em;
+//
+
+
+//large >992px
+//nav
+$l-nav-upper-height: 80px;
+$l-nav-upper-maxWidth: 992px;
+$l-nav-pc-li-padding: 2em 2em;
+$l-nav-links-i-fontSize: 1.8rem;
+$l-nav-links-i-margin: 0 0.5em;
+$l-nav-links-img-width: 40px;
+$l-nav-links-img-margin: 0 1em;
+//homeWrap
+$l-homeWrap-img-width: 300px;
+$l-homeWrap-container-width: 500px;
+//aboutmeWrap
+$l-aboutmeWrap-container-width: 970px;
+$l-aboutmeWrap-personWrap-width: 450px;
+$l-aboutmeWrap-personWrap-height: 620px;
+$l-aboutmeWrap-descriptionWrap-height: 270px;
+$l-aboutmeWrap-skillsWrap-height: 320px;
+//myworkWrap
+$l-myworkWrap-project-width: 970px;
+//certificates
+$l-certificatesWrap-swiper-width: 970px;
+$l-certificatesWrap-swiper-height: 800px;
+$l-certificatesWrap-badges-img-width: 185px;
+//contactWrap
+$l-contactWrap-container-width: 970px;
+$l-contactWrap-socials-width: 970px;
+//footerWrap
+$l-footerWrap-left-paddingRight: 3em;
+$l-footerWrap-column-paddingLeft: 3em;
