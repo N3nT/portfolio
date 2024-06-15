@@ -14,10 +14,8 @@ const toggleMobileMenu = () => {
 }
 
 const stickyNav = () => {
-	//console.log(window.scrollY);
 	if(window.scrollY >= 83){
 		pcNav.classList.add('sticky-nav')
-		pcNavLine.classList.add('sticky-line')
 
 	} else {
 		console.log('dick2');
