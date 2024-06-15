@@ -27,6 +27,9 @@ body {
 	}
 	&__pc {
 		display: none;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
 		li {
 			cursor: pointer;
 			transition: background-color 0.2s ease-in;
@@ -53,11 +56,15 @@ body {
 			}
 		}
 	}
+	&__logo{
+		a{
+			color: $white;
+		}
+	}
 	&__logo,
 	.fa-solid {
 		padding: $logo-padding;
 		font-size: $logo-fontSize;
-		color: $white;
 	}
 	&__hamburger {
 		position: absolute;
@@ -66,6 +73,7 @@ body {
 	}
 	.fa-solid {
 		font-size: $faSolid-fontSize;
+		color: $white;
 	}
 }
 .home-wrap {
@@ -553,6 +561,12 @@ body {
 			position: relative;
 			top: $m-aboutmeWrap-email-top;
 		}
+		&__description-wrap {
+			width: $m-personWrap-descriptionWrap-width;
+		}
+		&__skills-wrap {
+			width: $m-personWrap-skillsWrap-width;
+		}
 	}
 	.mywork-wrap {
 		&__project {
@@ -580,7 +594,7 @@ body {
 			max-width: $l-nav-upper-maxWidth;
 		}
 		&__pc {
-			display: block;
+			display: flex;
 			ul {
 				display: flex;
 			}
@@ -620,22 +634,37 @@ body {
 		}
 	}
 	.aboutme-wrap {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
 		&__container {
 			display: flex;
-			width: $l-aboutmeWrap-container-width;
-			justify-content: space-between;
+			justify-content: center;
 			align-items: center;
+		}
+		&__right-section{
+			margin-left: 1em;
 		}
 		&__person-wrap {
 			width: $l-aboutmeWrap-personWrap-width;
 			height: $l-aboutmeWrap-personWrap-height;
 		}
+		&__img-wrap{
+			height: $l-aboutmeWrap-imgWrap-height;
+			width: $l-aboutmeWrap-imgWrap-width;
+			img{
+				width: 280px;
+			}
+		}
 		&__description-wrap {
 			margin-top: unset;
 			height: $l-aboutmeWrap-descriptionWrap-height;
+			width: $l-aboutmeWrap-descriptionWrap-width;
 		}
 		&__skills-wrap {
 			height: $l-aboutmeWrap-skillsWrap-height;
+			width: $l-aboutmeWrap-skillsWrap-width;
 		}
 	}
 	.mywork-wrap {
