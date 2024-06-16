@@ -243,6 +243,7 @@ body {
 	}
 	&__skill-img {
 		width: $aboutmeWrap-skillsWrap-skills-img-width;
+		height: $aboutmeWrap-skillsWrap-skills-img-height;
 		margin: $aboutmeWrap-skillsWrap-skills-img-margin;
 	}
 	&__secondLine {
@@ -314,6 +315,7 @@ body {
 	}
 	&__tech-img {
 		width: $myworkWrap-project-spec-projectTech-img-width;
+		height: $myworkWrap-project-spec-projectTech-img-height;
 	}
 	&__tech-link {
 		font-size: $myworkWrap-project-spec-projectTech-link-fontSize;
@@ -503,6 +505,7 @@ body {
 		&__skill-img {
 			margin: $s-personWrap-skillImg-margin;
 			width: $s-personWrap-skillImg-width;
+			height: $s-personWrap-skillImg-height;
 		}
 	}
 	.mywork-wrap {
@@ -704,6 +707,4 @@ body {
 			padding-left: $l-footerWrap-column-paddingLeft;
 		}
 	}
-}
-@media screen and (min-width: 1200px) {
 }
