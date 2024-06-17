@@ -5,7 +5,11 @@
 	top: 0;
 	z-index: 99;
 	border-bottom: 1px solid $white;
+	// opacity: 0.7;
 	background-color: $background;
+	// &:hover{
+	// 	opacity: 1;
+	// }
 }
 .fixed-body {
 	touch-action: none;
@@ -28,7 +32,7 @@
 	justify-content: center;
 	align-items: center;
 	background-color: $mainOrange;
-	z-index: 98;
+	z-index: 99;
 	transition: transform 0.15s linear;
 	&--active {
 		transform: translateX(0);

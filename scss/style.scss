@@ -204,7 +204,7 @@ body {
 		justify-content: center;
 		align-items: center;
 		background-color: $mainOrange;
-		z-index: 99;
+		z-index: 98;
 		border-radius: 50px;
 		color: $black;
 		font-size: $aboutmeWrap-personWrap-name-fontsize;
@@ -682,7 +682,7 @@ body {
 			width: $l-aboutmeWrap-imgWrap-width;
 			img{
 				width: $l-aboutmeWrap-imgWrap-img-width;
-				height: $l-aboutmeWrap-descriptionWrap-height;
+				height: $l-aboutmeWrap-imgWrap-img-height;
 			}
 		}
 		&__description-wrap {
