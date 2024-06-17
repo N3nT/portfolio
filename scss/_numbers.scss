@@ -7,6 +7,7 @@ $faSolid-fontSize: 2.3rem;
 
 //home
 $homeImg-width: 250px;
+$homeImg-height: 343px;
 $homeImg-marginTop: 4em;
 $homeSticker-width: 100px;
 $homeSticker-height: 60px;
@@ -124,6 +125,7 @@ $footerWrap-column-link-padding: 0.3em;
 $s-nav-upper-maxWidth: 576px;
 //homeWrap
 $s-homeWrap-img-width: 350px;
+$s-homeWrap-img-height: 481px;
 $s-homeWrap-sticker-width: 120px;
 $s-homeWrap-buttons-width: 400px;
 $s-homeWrap-button-margin: 1em;
@@ -159,11 +161,13 @@ $s-footerWrap-paddings-fontSize: 1.2rem;
 $m-nav-upper-maxWidth: 700px;
 //homeWrap
 $m-homeWrap-img-width: 350px;
+$m-homeWrap-img-height: 481px;
 //aboutmeWrap
 $m-aboutmeWrap-personWrap-width: 580px;
 $m-aboutmeWrap-imgWrap-width: 400px;
 $m-aboutmeWrap-imgWrap-height: 400px;
 $m-aboutmeWrap-img-width: 300px;
+$m-aboutmeWrap-img-height: 418px;
 $m-aboutmeWrap-name-top: -30px;
 $m-aboutmeWrap-name-width: 350px;
 $m-aboutmeWrap-email-top: -10px;
@@ -183,19 +187,24 @@ $m-certificatesWrap-badges-img-margin: 2em 2.2em 0 2.2em;
 //nav
 $l-nav-upper-height: 80px;
 $l-nav-upper-maxWidth: 970px;
-$l-nav-pc-li-padding: 2em 2em;
+$l-nav-pc-a-padding: 2em 2em;
+$l-nav-pc-li-height: 80px;
 $l-nav-links-i-fontSize: 1.8rem;
 $l-nav-links-i-margin: 0 0.5em;
 $l-nav-links-img-width: 40px;
+$l-nav-links-img-height: 25px;
 $l-nav-links-img-margin: 0 1em;
 //homeWrap
 $l-homeWrap-img-width: 300px;
+$l-homeWrap-img-height: 412px;
 $l-homeWrap-container-width: 500px;
 //aboutmeWrap
 $l-aboutmeWrap-personWrap-width: 400px;
 $l-aboutmeWrap-personWrap-height: 620px;
 $l-aboutmeWrap-imgWrap-width: 370px;
 $l-aboutmeWrap-imgWrap-height: 370px;
+$l-aboutmeWrap-imgWrap-img-width: 280px;
+$l-aboutmeWrap-imgWrap-img-height: 390px;
 $l-aboutmeWrap-descriptionWrap-height: 270px;
 $l-aboutmeWrap-descriptionWrap-width: 490px;
 $l-aboutmeWrap-skillsWrap-height: 320px;

@@ -98,6 +98,7 @@ body {
 	}
 	&__img {
 		width: $homeImg-width;
+		height: $homeImg-height;
 	}
 	&__text {
 		max-width: $homeText-maxWidth;
@@ -140,9 +141,11 @@ body {
 			z-index: 1;
 			border: 3px solid $mainBlue;
 			cursor: pointer;
-			transition: background-color 0.3s ease-in;
+			transition: background-color 0.3s ease-in, color 0.3s, font-weight 0.3s;
 			&:hover {
 				background-color: $background;
+				color: $mainBlue;
+				font-weight: 700;
 			}
 		}
 		&--contact {
@@ -150,10 +153,13 @@ body {
 			left: $homeButton-contact-left;
 			background-color: $mainOrange;
 			border: 3px solid $mainOrange;
+			color: $black;
 			cursor: pointer;
-			transition: background-color 0.3s ease-in;
+			transition: background-color 0.3s ease-in, color 0.3s, font-weight 0.3s;
 			&:hover {
 				background-color: $background;
+				color: $mainOrange;
+				font-weight: 700;
 			}
 		}
 	}
@@ -187,6 +193,7 @@ body {
 		position: relative;
 		bottom: $aboutmeWrap-personWrap-imgWrap-img-bottom;
 		width: $aboutmeWrap-personWrap-imgWrap-img-width;
+		height: 306px;
 	}
 	&__name {
 		position: relative;
@@ -199,6 +206,7 @@ body {
 		background-color: $mainOrange;
 		z-index: 99;
 		border-radius: 50px;
+		color: $black;
 		font-size: $aboutmeWrap-personWrap-name-fontsize;
 	}
 	&__email {
@@ -278,13 +286,15 @@ body {
 		width: $myworkWrap-link-width;
 		height: $myworkWrap-link-height;
 		background-color: $mainOrange;
-		color: $white;
+		color: $black;
 		border: 3px solid $mainOrange;
 		border-radius: $borderRadius;
 		cursor: pointer;
-		transition: background-color 0.2s ease-in;
+		transition: background-color 0.2s ease-in, color 0.2s, font-weight 0.2s;
 		&:hover {
 			background-color: $background;
+			color: $mainOrange;
+			font-weight: 700;
 		}
 	}
 	&__info,
@@ -389,14 +399,16 @@ body {
 		padding: $contactWrap-submit-padding;
 		border: none;
 		width: 60%;
-		color: $white;
+		color: $black;
 		border: 3px solid $mainOrange;
 		border-radius: $borderRadius;
 		font-size: $contactWrap-submit-fontSize;
 		cursor: pointer;
-		transition: 0.2s background-color ease-in;
+		transition: 0.2s background-color ease-in, color 0.2s, font-weight 0.2s;
 		&:hover {
 			background-color: $background;
+			color: $mainOrange;
+			font-weight: 700;
 		}
 	}
 	&__socials {
@@ -414,7 +426,7 @@ body {
 		transition: background-color 0.2s ease-in;
 		a {
 			padding: $contactWrap-socials-link-padding;
-			color: $white;
+			color: $background;
 			pointer-events: auto;
 			&:hover {
 				color: $mainOrange;
@@ -468,6 +480,7 @@ body {
 		}
 		&__img {
 			width: $s-homeWrap-img-width;
+			height: $s-homeWrap-img-height;
 		}
 		&__sticker {
 			width: $s-homeWrap-sticker-width;
@@ -545,6 +558,7 @@ body {
 	.home-wrap {
 		&__img {
 			width: $m-homeWrap-img-width;
+			height: $m-homeWrap-img-height;
 		}
 	}
 	.aboutme-wrap {
@@ -559,6 +573,7 @@ body {
 		}
 		&__img {
 			width: $m-aboutmeWrap-img-width;
+			height: $m-aboutmeWrap-img-height;
 		}
 		&__name {
 			top: $m-aboutmeWrap-name-top;
@@ -606,8 +621,10 @@ body {
 				display: flex;
 			}
 			li {
-				padding: $l-nav-pc-li-padding;
+				height: $l-nav-pc-li-height;
+				display: flex;
 				a {
+					padding: $l-nav-pc-a-padding;
 					color: $white;
 				}
 			}
@@ -626,6 +643,7 @@ body {
 			}
 			img {
 				width: $l-nav-links-img-width;
+				height: $l-nav-links-img-height;
 				margin: $l-nav-links-img-margin;
 			}
 		}
@@ -635,6 +653,7 @@ body {
 		justify-content: center;
 		&__img {
 			width: $l-homeWrap-img-width;
+			height: $l-homeWrap-img-height;
 		}
 		&__container {
 			width: $l-homeWrap-container-width;
@@ -661,7 +680,8 @@ body {
 			height: $l-aboutmeWrap-imgWrap-height;
 			width: $l-aboutmeWrap-imgWrap-width;
 			img{
-				width: 280px;
+				width: $l-aboutmeWrap-imgWrap-img-width;
+				height: $l-aboutmeWrap-descriptionWrap-height;
 			}
 		}
 		&__description-wrap {
