@@ -377,6 +377,7 @@ body {
 		flex-direction: column;
 		textarea {
 			height: $contactWrap-form-textarea-height;
+			resize: none;
 		}
 	}
 	&__input {
