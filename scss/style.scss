@@ -82,6 +82,7 @@ body {
 	flex-direction: column;
 	align-items: center;
 	width: 100%;
+	scroll-margin-top: 160px;
 	&__img-wrap {
 		margin-top: $homeImg-marginTop;
 		position: relative;
@@ -405,7 +406,7 @@ body {
 		border-radius: $borderRadius;
 		font-size: $contactWrap-submit-fontSize;
 		cursor: pointer;
-		transition: 0.2s background-color ease-in, color 0.2s, font-weight 0.2s;
+		transition: background-color 0.2s ease-in, color 0.2s, font-weight 0.2s;
 		&:hover {
 			background-color: $background;
 			color: $mainOrange;

@@ -1,5 +1,8 @@
 @use 'colors' as *;
 @use 'numbers' as *;
+section{
+	scroll-margin-top: 85px;
+}
 .sticky-nav{
 	position: fixed;
 	top: 0;
