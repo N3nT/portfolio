@@ -47,13 +47,13 @@ body {
 				color: $mainOrange;
 			}
 		}
-		img {
-			opacity: 0.8;
-			cursor: pointer;
-			transition: opacity 0.2s ease-in;
-			&:hover {
-				opacity: 1;
-			}
+	}
+	&__pl {
+		opacity: 0.8;
+		cursor: pointer;
+		transition: opacity 0.2s ease-in;
+		&:hover {
+			opacity: 1;
 		}
 	}
 	&__logo{
