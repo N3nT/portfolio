@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description"
+        content="Witaj na mojej stronie portfolio. Poznaj moje projekty i umiejętności w zakresie tworzenia stron internetowych, w tym responsywne interfejsy, efektywne rozwiązania backendowe i szybkie wdrożenia z wykorzystaniem JavaScript, PHP i WordPress. Odkryj wysokiej jakości i estetyczne rozwiązania internetowe dostosowane do różnorodnych potrzeb klientów.">
+    <link rel="icon" type="image/icon" href="./img/fav-icon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Tiny5&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./scss/reset.scss">
+    <link rel="stylesheet" href="./scss/style.scss">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>Widlak | WebDeveloping</title>
+</head>
+
+<body>
+    <div class="mobile-nav">
+        <a href="index-pl.html" aria-label="Polska wersja strony"><img class="mobile-nav__pl" src="./img/pl.webp"
+                alt="PL flag"></img></a>
+        <a href="index.html" aria-label="Angielska wersja strony"><img class="mobile-nav__uk" src="./img/uk.webp"
+                alt="UK flag"></img></a>
+        <ul class="mobie-nav__list">
+            <li class="mobile-nav__list-element"><a href="#">Home</a></li>
+            <li class="mobile-nav__list-element"><a href="#aboutme">O mnie</a></li>
+            <li class="mobile-nav__list-element"><a href="#mywork">Projekty</a></li>
+            <li class="mobile-nav__list-element"><a href="#certificates">Certyfikaty</a></li>
+            <li class="mobile-nav__list-element"><a href="#contact">Kontakt</a></li>
+        </ul>
+        <ul class="mobile-nav__socials">
+            <li><a class="mobile-nav__links" href="https://github.com/N3nT" target="_blank"
+                    aria-label="Link do githuba"><i class="fa-brands fa-github"></i></a></li>
+            <li><a class="mobile-nav__links" href="https://www.linkedin.com/in/bartosz-widlak-06a316313/"
+                    target="_blank" aria-label="Link do LinkedIna"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li><a class="mobile-nav__links" href="https://x.com/BartoszWidlak" target="_blank"
+                    aria-label="Link do X"><i class="fa-brands fa-x-twitter"></i></a></li>
+        </ul>
+    </div>
+    <nav class="nav">
+        <div class="nav__upper">
+            <div class="nav__logo"><a href="#">BartoszWidlak</a></div>
+            <div class="nav__hamburger"><i class="fa-solid fa-bars"></i></div>
+            <div class="nav__links">
+                <a href="https://github.com/N3nT" target="_blank" aria-label="Link do githuba"><i
+                        class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/bartosz-widlak-06a316313/" target="_blank"
+                    aria-label="Link do linkedina"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://x.com/BartoszWidlak" target="_blank" aria-label="Link do X"><i
+                        class="fa-brands fa-x-twitter"></i></a>
+                <div class="vertical-line"></div>
+                <a href="index-pl.html"><img class="nav__pl" src="./img/pl.webp" alt="PL flag"></a>
+                <a href="index.html"><img class="nav__uk" src="./img/uk.webp" alt="UK flag"></a>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="nav__pc">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#aboutme">O Mnie</a></li>
+                <li><a href="#mywork">Projekty</a></li>
+                <li><a href="#certificates">Certyfikaty</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </div>
+        <div class="line pc-line"></div>
+    </nav>
+    <section id="home" class="home-wrap">
+        <div class="home-wrap__img-wrap">
+            <div class="home-wrap__sticker"></div>
+            <img class="home-wrap__img" src="./img/image.webp" alt="My photo in mountain">
+        </div>
+        <div class="home-wrap__container">
+            <p class="home-wrap__text">Jestem pasjonetem tworzenia stron internetowych, tworzonych z pomocą <span
+                    class="text-js">JavaScript</span>, <span class="text-php">PHP</span> i <span
+                    class="text-wp">WordPress</span>.
+                Moje projekty obejmują responsywne interfejsy, efektywny backend i szybkie wdrożenia. Oferuję wysoką
+                jakość i
+                estetykę w moich rozwiązaniach.</p>
+            <div class="home-wrap__buttons">
+                <a class="home-wrap__button home-wrap__button--mywork" href="#mywork" role="button">Projekty</a>
+                <a class="home-wrap__button home-wrap__button--contact" href="#contact" role="button">Kontakt</a>
+            </div>
+        </div>
+    </section>
+    <section id="aboutme" class="aboutme-wrap">
+        <h2 class="section-title">O Mnie</h2>
+        <div class="aboutme-wrap__container">
+            <div class="aboutme-wrap__person-wrap">
+                <div class="aboutme-wrap__img-wrap">
+                    <img class="aboutme-wrap__img" src="./img/head.webp" alt="My portrait photo">
+                </div>
+                <p class="aboutme-wrap__name">Bartosz Widlak</p>
+                <p class="aboutme-wrap__email">bartosz.widlak@op.pl</p>
+                <a class="aboutme-wrap__cv-button" href="#cv" role="button">CV</a>
+            </div>
+            <div class="aboutme-wrap__right-section">
+                <div class="aboutme-wrap__description-wrap">
+                    <p>
+                        Rozpocząłem swoją drogę od ukończenia technikum informatycznego, gdzie zdobyłem solidne podstawy
+                        w
+                        dziedzinie
+                        informatyki. Po ukończeniu technikum informatycznego, kontynuuje naukę na studiach oraz
+                        samodzielnie,
+                        zdobywając wiedzę w obszarze tworzenia aplikacji internetowych. Ciągłe doskonalenie umożliwia mi
+                        świadczenie
+                        usług na wysokim poziomie, odpowiadając na różnorodne potrzeby klientów.
+                    </p>
+                </div>
+                <div class="aboutme-wrap__skills-wrap">
+                    <h3 class="aboutme-wrap__title">Umiejętności</h3>
+                    <div class="aboutme-wrap__skils">
+                        <div class="aboutme-wrap__firstLine">
+                            <img class="aboutme-wrap__skill-img" src="./img/figma.webp" alt="Figma logo">
+                            <img class="aboutme-wrap__skill-img" src="./img/vue.webp" alt="Vue logo">
+                            <img class="aboutme-wrap__skill-img" src="./img/js.webp" alt="JS logo">
+                        </div>
+                        <div class="aboutme-wrap__secondLine">
+                            <img class="aboutme-wrap__skill-img" src="./img/ts.webp" alt="TypeScript logo">
+                            <img class="aboutme-wrap__skill-img" src="./img/wordpress.webp" alt="React logo">
+                            <img class="aboutme-wrap__skill-img" src="./img/ps.webp" alt="Photoshop logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="mywork" class="mywork-wrap">
+        <h2 class="section-title">Projekty</h2>
+        <div class="mywork-wrap__project">
+            <div class="mywork-wrap__info">
+                <p>BeskidTravel | 26.05.2024</p>
+            </div>
+            <div class="mywork-wrap__spec">
+                <p class="mywork-wrap__project-name">BeskidTravel</p>
+                <div class="mywork-wrap__project-tech">
+                    <img class="mywork-wrap__tech-img" src="./img/figma-bg.webp" alt="Figma logo">
+                    <img class="mywork-wrap__tech-img" src="./img/sass.webp" alt="Sass logo">
+                    <img class="mywork-wrap__tech-img" src="./img/swiper-logo.svg" alt="SwiperJs logo">
+                    <a class="mywork-wrap__tech-link" href="https://n3nt.github.io/beskid/index.html" target="_blank"
+                        aria-label="Sprawdź BeskidTravel live"><i class="fa-solid fa-circle-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="mywork-wrap__project">
+            <div class="mywork-wrap__info">
+                <p>cloudSpace. | 23.01.2024</p>
+            </div>
+            <div class="mywork-wrap__spec">
+                <p class="mywork-wrap__project-name">cloudSpace.</p>
+                <div class="mywork-wrap__project-tech">
+                    <img class="mywork-wrap__tech-img" src="./img/js.webp" alt="JS logo">
+                    <img class="mywork-wrap__tech-img" src="./img/sass.webp" alt="Sass logo">
+                    <img class="mywork-wrap__tech-img" src="./img/vite.webp" alt="Vite logo">
+                    <a class="mywork-wrap__tech-link" href="https://n3nt.github.io/weather/index.html" target="_blank"
+                        aria-label="Sprwadź cloudSpace. live"><i class="fa-solid fa-circle-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="mywork-wrap__project">
+            <div class="mywork-wrap__info">
+                <p>Notepad | 12.10.2023</p>
+            </div>
+            <div class="mywork-wrap__spec">
+                <p class="mywork-wrap__project-name">Notepad</p>
+                <div class="mywork-wrap__project-tech">
+                    <img class="mywork-wrap__tech-img" src="./img/php.webp" alt="PHP logo" style="width: 60px;">
+                    <img class="mywork-wrap__tech-img" src="./img/js.webp" alt="JS logo">
+                    <img class="mywork-wrap__tech-img" src="./img/css.webp" alt="CSS logo">
+                    <a class="mywork-wrap__tech-link" href="https://n3nt.000webhostapp.com/notepad/register.php"
+                        target="_blank" aria-label="Sprawdź Notepad live"><i
+                            class="fa-solid fa-circle-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="mywork-wrap__project">
+            <div class="mywork-wrap__info">
+                <p>PiggyBank | 07.06.2023</p>
+            </div>
+            <div class="mywork-wrap__spec">
+                <p class="mywork-wrap__project-name">PiggyBank</p>
+                <div class="mywork-wrap__project-tech">
+                    <img class="mywork-wrap__tech-img" src="./img/python.webp" alt="Python logo">
+                    <img class="mywork-wrap__tech-img" src="./img/kivy.webp" alt="Kivy logo">
+                    <img class="mywork-wrap__tech-img" src="./img/pycharm.webp" alt="PyCharm logo">
+                    <a class="mywork-wrap__tech-link" href="https://github.com/N3nT/piggybank" target="_blank"
+                        aria-label="Link do piggybank repozytorium"><i class="fa-solid fa-circle-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- podstrona? -->
+        <a class="mywork-wrap__more-button" href="projects-pl.html" role="button" target="_blank"
+            aria-label="Zobacz więcej projektów">Zobacz więcej</a>
+    </section>
+    <section id="certificates" class="certificates-wrap">
+        <h2 class="section-title">Certyfikaty</h2>
+        <div class="certificates-wrap__certificates">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="./img/certificates/ccna1.jpg" target="_blank"><img src="./img/certificates/ccna1.webp"
+                                alt="CCNA 1 by CISCO"></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="./img/certificates/ccna1.jpg" target="_blank"><img src="./img/certificates/ccna-2.webp"
+                                alt="CCNA 2 by CISCO"></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="./img/certificates/python-1.jpg" target="_blank"><img
+                                src="./img/certificates/python-1.webp" alt="CCNA 2 by CISCO"></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="./img/certificates/python-2.jpg" target="_blank"><img
+                                src="./img/certificates/python-2.webp" alt="CCNA 2 by CISCO"></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="./img/certificates/cybersecurity.jpg" target="_blank"><img
+                                src="./img/certificates/cybersecurity.webp"
+                                alt="Introduction to Cybersecurity by CISCO"></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="./img/certificates/mmc-1.jpg" target="_blank"><img src="./img/certificates/mmc-1.webp"
+                                alt="Kurs Tworzenia Stron WWW cz.1 by Mateusz Maj"></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="./img/certificates/mmc-2.jpg" target="_blank"><img src="./img/certificates/mmc-2.webp"
+                                alt="Kurs Tworzenia Stron WWW cz.2 by Mateusz Maj"></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="./img/certificates/mmc-3.jpg" target="_blank"><img src="./img/certificates/mmc-3.webp"
+                                alt="Kurs Tworzenia Stron WWW cz.3 by MMC School"></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="./img/certificates/mmc-4.jpg" target="_blank"><img src="./img/certificates/mmc-4.webp"
+                                alt="Kurs Tworzenia Stron WWW cz. 4 by MMC School"></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="./img/certificates/js-1.jpg" target="_blank"><img src="./img/certificates/js-1.webp"
+                                alt="JS - Jedyny Kurs, którego potrzebujesz by MMC School"></a>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div class="certificates-wrap__badges">
+            <img src="./img/badges/ccna-switching-routing-and-wireless-essentials.1.webp" alt="CCNA - CISCO" srcset="">
+            <img src="./img/badges/introduction-to-cybersecurity.webp" alt="Introduction to cybersecurity - CISCO">
+            <img src="./img/badges/python-essentials-1.1.webp" alt="Python essentials 1 - CISCO">
+            <img src="./img/badges/python-essentials-2.webp" alt="Python essentials 2 - CISCO">
+        </div>
+    </section>
+    <section id="contact" class="contact-wrap">
+        <h2 class="section-title">Kontakt</h2>
+        <div class="contact-wrap__container">
+            <form class="contact-wrap__form" action="https://formspree.io/f/xknddyge" method="POST">
+                <input name="First name" class=" contact-wrap__input" type="text" placeholder="Imie" required>
+                <input name="E-mail" class="contact-wrap__input" type="email" placeholder="E-mail" required>
+                <textarea name="Message" class="contact-wrap__input" placeholder="Wiadomość" required></textarea>
+                <input class="contact-wrap__submit" type="submit" value="Wyślij">
+            </form>
+        </div>
+        <div class="contact-wrap__socials">
+            <a href="https://github.com/N3nT" target="_blank" aria-label="Link do githuba"><i
+                    class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/bartosz-widlak-06a316313/" target="_blank"
+                aria-label="Link do LinkedIna"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://x.com/BartoszWidlak" target="_blank" aria-label="Link do x"><i
+                    class="fa-brands fa-x-twitter"></i></a>
+        </div>
+    </section>
+    <div class="line"></div>
+    <footer class="footer-wrap">
+        <div class="footer-wrap__left">
+            <p>BartoszWidlak</p>
+            <p>2024</p>
+        </div>
+        <div class="footer-wrap__right">
+            <div class="footer-wrap__first-column">
+                <a href="#home">Home</a>
+                <a href="#aboutme">O Mnie</a>
+                <a href="#mywork">Projekty</a>
+            </div>
+            <div class="footer-wrap__second-column">
+                <a href="#certificates">Certyfikaty</a>
+                <a href="#contact">Kontakt</a>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="./js/main.js" defer async></script>
+    <script type="module" src="./js/swiper.js"></script>
+    <script src="https://kit.fontawesome.com/82d15cf176.js" crossorigin="anonymous" defer async></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+
+</html>
