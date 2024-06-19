@@ -5,6 +5,7 @@ const mobileNavListElements = document.querySelectorAll('.mobile-nav__list-eleme
 const pcNav = document.querySelector('.nav__pc')
 const pcNavLine = document.querySelector('.pc-line')
 const form = document.querySelector('form')
+const footerDate = document.querySelector('.footer-date')
 
 const toggleMobileMenu = () => {
 	mobileNav.classList.toggle('mobile-nav--active')
@@ -21,6 +22,11 @@ const stickyNav = () => {
 	}
 }
 
+const changeFooterDate = () => {
+	const date = new Date()
+	footerDate.innerText = date.getFullYear()
+}
+
 if (form) {
 	form.addEventListener('submit', e => {
 		e.preventDefault()
@@ -28,6 +34,7 @@ if (form) {
 	})
 }
 
+body.addEventListener('load', changeFooterDate)
 window.addEventListener('scroll', stickyNav)
 hamburger.addEventListener('click', toggleMobileMenu)
 mobileNavListElements.forEach(li => {
