@@ -232,7 +232,6 @@ body {
 		&:hover {
 			background-color: $background;
 		}
-		pointer-events: none;
 	}
 	&__description-wrap {
 		margin-top: $aboutmeWrap-descriptionWrap-marginTop;
