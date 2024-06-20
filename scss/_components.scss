@@ -76,6 +76,11 @@ section {
 	&__pl {
 		top: 15px;
 		left: 30px;
+		opacity: 0.6;
+		transition: opacity .2s;
+		&:hover{
+			opacity: 1;
+		}
 	}
 	&__uk {
 		top: 15px;

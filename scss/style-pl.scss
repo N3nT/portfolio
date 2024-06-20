@@ -9,3 +9,15 @@
 .nav__pl{
     opacity: 1;
 }
+.mobile-nav{
+    &__pl{
+        opacity: 1;
+    }
+    &__uk{
+        opacity: 0.6;
+        transition: opacity 0.2s;
+        &:hover{
+            opacity: 1;
+        }
+    }
+}
